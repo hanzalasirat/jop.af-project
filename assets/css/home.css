@@ -7,8 +7,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: rgb(221, 224, 227);
 }
 
+aside a{
+    text-decoration: none;
+}
 .top-banner {
     background: white;
     color: black;
@@ -152,4 +156,29 @@ body {
     .search-icon-btn {
         margin: 10px 0;
     }
+}
+
+
+.cours-item{
+    border: solid 1px black;
+}
+
+.category-item{
+    border: solid 1px black;
+    margin-top: 100px;
+    padding: 10px 10px ;
+
+}
+
+.iq-test-box{
+    margin-bottom: 30px;
+    height: 100px;
+    padding: 40px 0;
+}
+
+.more-scholarship-box{
+ 
+    margin-bottom: 50px;
+    padding-top: 110px;
+
 }
