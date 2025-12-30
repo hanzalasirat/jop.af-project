@@ -194,3 +194,29 @@ aside a{
             font-weight: 300;
         }
        
+
+
+/* Add just these 3 lines */
+.sticky-left-sidebar, .sticky-right-sidebar { position: sticky; top: 20px; }
+.row { display: flex; flex-wrap: wrap; }
+.scrollable-main { flex: 1; }
+
+/* Mobile fix */
+@media (max-width: 991px) {
+    .sticky-left-sidebar, .sticky-right-sidebar { position: static; }
+    .row { flex-direction: column; }
+}
+
+/* link aside */
+
+
+.btn-outline-primary {
+    font-size: 0.9rem;
+    border-color: #d0d7e2;
+}
+
+
+.sidebar-content a{
+    text-decoration: none;
+    color:rgb(24, 15, 52);
+}

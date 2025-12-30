@@ -173,63 +173,53 @@ aside a{
 
 /* body main */
 
-        /* Custom CSS for sticky behavior */
-        .sticky-container {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        
-        .left-sidebar-sticky {
-            position: sticky;
-            top: 20px;
-            height: fit-content;
-            max-height: 100vh;
-            overflow-y: auto;
-            z-index: 1;
-        }
-        
-        .right-sidebar-sticky {
-            position: sticky;
-            top: 20px;
-            height: fit-content;
-            max-height: 100vh;
-            overflow-y: auto;
-            z-index: 1;
-        }
-        
-        .main-content-scroll {
-            min-height: 200vh; /* This will make it scrollable */
-        }
-        
-        /* Ensure content flows properly */
-        .row {
-            align-items: flex-start;
-        }
-        
-        /* Fix for sidebar content height */
-        .sidebar-content {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 991.98px) {
-            .left-sidebar-sticky,
-            .right-sidebar-sticky {
-                position: relative;
-                top: 0;
-                max-height: none;
-            }
-            
-            .main-content-scroll {
-                min-height: auto;
-            }
-        }
-        
-        /* Ensure images are responsive */
-        img {
-            max-width: 100%;
-            height: auto;
-        }
+      
+        /* Simple Sticky Layout for Scholarship Page */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* Left and Right Sidebars - Sticky */
+.left-sidebar-sticky,
+.right-sidebar-sticky {
+    position: sticky;
+    top: 100px; /* Adjust based on your banner + navbar height */
+    align-self: flex-start;
+    height: fit-content;
+}
+
+/* Main Content - Normal scrolling */
+.main-content-scroll {
+    flex: 1;
+}
+
+/* On mobile, remove sticky and stack vertically */
+@media (max-width: 991px) {
+    .left-sidebar-sticky,
+    .right-sidebar-sticky {
+        position: static;
+        width: 100%;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+/* link  */
+ .btn-outline-primary {
+    --bs-btn-color: #0d6efd;
+    --bs-btn-border-color: #dbe7ff;
+    --bs-btn-hover-bg: #e7f0ff;
+    --bs-btn-hover-border-color: #cfe0ff;
+    font-size: 0.875rem;
+  }
+
+
+  /* whathar */
+    
+
+
