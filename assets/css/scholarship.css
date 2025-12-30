@@ -10,6 +10,17 @@ body {
     background-color: rgb(221, 224, 227);
 }
 
+
+nav.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1050;
+}
+
+
+
+
+
 aside a{
     text-decoration: none;
 }
@@ -159,38 +170,66 @@ aside a{
 }
 
 
-.cours-item{
-    border: solid 1px black;
-}
 
-.category-item{
-    border: solid 1px black;
-    margin-top: 100px;
-    padding: 10px 10px ;
+/* body main */
 
-}
-
-.iq-test-box{
-    margin-bottom: 30px;
-    height: 100px;
-    padding: 40px 0;
-}
-
-.more-scholarship-box{
- 
-    margin-bottom: 50px;
-    padding-top: 110px;
-
-}
-/* footer */
-        .about-link>a{
-            text-decoration: none;
-            text-decoration-line: none;
-            color: white;
-            transition: all ease-in-out 6000ml;
+        /* Custom CSS for sticky behavior */
+        .sticky-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
-        .about-link>a:hover{
-            margin-left: 5px;
-            font-weight: 300;
+        
+        .left-sidebar-sticky {
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+            max-height: 100vh;
+            overflow-y: auto;
+            z-index: 1;
         }
-       
+        
+        .right-sidebar-sticky {
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+            max-height: 100vh;
+            overflow-y: auto;
+            z-index: 1;
+        }
+        
+        .main-content-scroll {
+            min-height: 200vh; /* This will make it scrollable */
+        }
+        
+        /* Ensure content flows properly */
+        .row {
+            align-items: flex-start;
+        }
+        
+        /* Fix for sidebar content height */
+        .sidebar-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 991.98px) {
+            .left-sidebar-sticky,
+            .right-sidebar-sticky {
+                position: relative;
+                top: 0;
+                max-height: none;
+            }
+            
+            .main-content-scroll {
+                min-height: auto;
+            }
+        }
+        
+        /* Ensure images are responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
