@@ -10,6 +10,17 @@ body {
     background-color: rgb(221, 224, 227);
 }
 
+
+nav.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1050;
+}
+
+
+
+
+
 aside a{
     text-decoration: none;
 }
@@ -161,13 +172,8 @@ aside a{
 
 .cours-item{
     border: solid 1px black;
-}
-
-.category-item{
-    border: solid 1px black;
-    margin-top: 100px;
     padding: 10px 10px ;
-
+    margin-bottom: 30px;
 }
 
 .iq-test-box{
@@ -181,4 +187,13 @@ aside a{
     margin-bottom: 50px;
     padding-top: 110px;
 
+}
+
+.weather-box img {
+    display: block;
+    margin: 0 auto;
+}
+
+.weather-box h2 {
+    font-weight: 600;
 }
