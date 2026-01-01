@@ -17,6 +17,13 @@ nav.navbar {
     z-index: 1050;
 }
 
+<<<<<<< HEAD
+
+
+
+
+=======
+>>>>>>> 375aea54bfd44c8b33735fd0fd7ff1cd91f48e6f
 aside a{
     text-decoration: none;
 }
@@ -169,6 +176,68 @@ aside a{
 
 /* body main */
 
+<<<<<<< HEAD
+        /* Custom CSS for sticky behavior */
+        .sticky-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .left-sidebar-sticky {
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+            max-height: 100vh;
+            overflow-y: auto;
+            z-index: 1;
+        }
+        
+        .right-sidebar-sticky {
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+            max-height: 100vh;
+            overflow-y: auto;
+            z-index: 1;
+        }
+        
+        .main-content-scroll {
+            min-height: 200vh; /* This will make it scrollable */
+        }
+        
+        /* Ensure content flows properly */
+        .row {
+            align-items: flex-start;
+        }
+        
+        /* Fix for sidebar content height */
+        .sidebar-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 991.98px) {
+            .left-sidebar-sticky,
+            .right-sidebar-sticky {
+                position: relative;
+                top: 0;
+                max-height: none;
+            }
+            
+            .main-content-scroll {
+                min-height: auto;
+            }
+        }
+        
+        /* Ensure images are responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+=======
       
         /* Simple Sticky Layout for Scholarship Page */
 .row {
@@ -219,3 +288,4 @@ aside a{
     
 
 
+>>>>>>> 375aea54bfd44c8b33735fd0fd7ff1cd91f48e6f
