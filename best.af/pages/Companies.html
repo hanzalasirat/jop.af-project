@@ -8,17 +8,252 @@
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- bootstrap -->
-     <link rel="stylesheet" href="../assets/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
      <script src="../assets/bootstrap-5.3.7-dist/js/bootstrap.min.js"></script>
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCcaYpYg0VvTZhyTEggF5tJv8YMYd1GpHYr4dA+XnXhboHwRBE1nZ5K5bCrbF+AA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+           body {
+            background-color: #f6f7f9;
+        }
+        .company-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .company-logo {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+        .ad-box {
+            background: #fff;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        .sticky-sidebar {
+            position: sticky;
+            top: 20px;
+        }
+        .input-group .form-control {
+            height: 70px;
+            height: 70px;
+        }
+    </style>
 </head>
 <body>
-    <main>
-        
+    <main style="width: 1000px; margin: auto;">
+        <div class="container my-4">
+
+    <!-- Search Bar -->
+    <div class="row mb-4">
+        <div class="col-lg-9">
+            <div class="input-group">
+                <input type="text" class="form-control"
+                       placeholder="Search companies by name, keywords or location">
+                <button class="btn btn-danger">Search Companies</button>
+            </div>
+        </div>
+        <div class="col" style="display: flex; align-items: center; justify-content: center;">
+            <h3 class="fw-bold mb-2">Advertisement</h3>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <!-- Companies List -->
+        <div class="col-lg-9">
+
+            <!-- Company Card -->
+            <div class="company-card d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="https://db.bast.af/public/company_photo/1764754389photoLOGO.jpg" class="company-logo me-3">
+                    <div>
+                        <h6 class="mb-1">Astello Hotel</h6>
+                        <small class="text-muted">Liverpool, United Kingdom</small>
+                    </div>
+                </div>
+                <span class="text-muted">Open Jobs – 0</span>
+            </div>
+
+            <div class="company-card d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="https://db.bast.af/public/company_photo/1764233178photo01_ERIELL-KA_PNG.png" class="company-logo me-3">
+                    <div>
+                        <h6 class="mb-1">Eriell Kam</h6>
+                        <small class="text-muted">Afghanistan</small>
+                    </div>
+                </div>
+                <span class="text-muted">Open Jobs – 1</span>
+            </div>
+
+            <div class="company-card d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="https://db.bast.af/public/company_photo/1764065167photodownload%20(27)277.jpg" class="company-logo me-3">
+                    <div>
+                        <h6 class="mb-1">ACTED</h6>
+                        <small class="text-muted">Afghanistan</small>
+                    </div>
+                </div>
+                <span class="text-muted">Open Jobs – 0</span>
+            </div>
+
+            <div class="company-card d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="https://db.bast.af/public/company_photo/1764054057photoLogo-color-transprt-1.png" class="company-logo me-3">
+                    <div>
+                        <h6 class="mb-1">Vision Development Organization</h6>
+                        <small class="text-muted">Afghanistan</small>
+                    </div>
+                </div>
+                <span class="text-muted">Open Jobs – 1</span>
+            </div>
+
+             <div class="company-card d-flex justify-content-between align-items-center">
+     <div class="d-flex align-items-center">
+         <img src="https://db.bast.af/public/company_photo/1764054057photoLogo-color-transprt-1.png" class="company-logo me-3">
+         <div>
+             <h6 class="mb-1">Vision Development Organization</h6>
+             <small class="text-muted">Afghanistan</small>
+         </div>
+     </div>
+     <span class="text-muted">Open Jobs – 1</span>
+ </div>
+
+  <div class="company-card d-flex justify-content-between align-items-center">
+     <div class="d-flex align-items-center">
+         <img src="https://db.bast.af/public/company_photo/1764054057photoLogo-color-transprt-1.png" class="company-logo me-3">
+         <div>
+             <h6 class="mb-1">Vision Development Organization</h6>
+             <small class="text-muted">Afghanistan</small>
+         </div>
+     </div>
+     <span class="text-muted">Open Jobs – 1</span>
+ </div>
+
+  <div class="company-card d-flex justify-content-between align-items-center">
+     <div class="d-flex align-items-center">
+         <img src="https://db.bast.af/public/company_photo/1764054057photoLogo-color-transprt-1.png" class="company-logo me-3">
+         <div>
+             <h6 class="mb-1">Vision Development Organization</h6>
+             <small class="text-muted">Afghanistan</small>
+         </div>
+     </div>
+     <span class="text-muted">Open Jobs – 1</span>
+ </div>
+
+  <div class="company-card d-flex justify-content-between align-items-center">
+     <div class="d-flex align-items-center">
+         <img src="https://db.bast.af/public/company_photo/1764054057photoLogo-color-transprt-1.png" class="company-logo me-3">
+         <div>
+             <h6 class="mb-1">Vision Development Organization</h6>
+             <small class="text-muted">Afghanistan</small>
+         </div>
+     </div>
+     <span class="text-muted">Open Jobs – 1</span>
+ </div>
+
+  <div class="company-card d-flex justify-content-between align-items-center">
+     <div class="d-flex align-items-center">
+         <img src="https://db.bast.af/public/company_photo/1764054057photoLogo-color-transprt-1.png" class="company-logo me-3">
+         <div>
+             <h6 class="mb-1">Vision Development Organization</h6>
+             <small class="text-muted">Afghanistan</small>
+         </div>
+     </div>
+     <span class="text-muted">Open Jobs – 1</span>
+ </div>
+
+  <div class="company-card d-flex justify-content-between align-items-center">
+     <div class="d-flex align-items-center">
+         <img src="https://db.bast.af/public/company_photo/1764054057photoLogo-color-transprt-1.png" class="company-logo me-3">
+         <div>
+             <h6 class="mb-1">Vision Development Organization</h6>
+             <small class="text-muted">Afghanistan</small>
+         </div>
+     </div>
+     <span class="text-muted">Open Jobs – 1</span>
+ </div>
+ 
+  <div class="company-card d-flex justify-content-between align-items-center">
+     <div class="d-flex align-items-center">
+         <img src="https://db.bast.af/public/company_photo/1764054057photoLogo-color-transprt-1.png" class="company-logo me-3">
+         <div>
+             <h6 class="mb-1">Vision Development Organization</h6>
+             <small class="text-muted">Afghanistan</small>
+         </div>
+     </div>
+     <span class="text-muted">Open Jobs – 1</span>
+ </div>
+
+  <div class="company-card d-flex justify-content-between align-items-center">
+     <div class="d-flex align-items-center">
+         <img src="https://db.bast.af/public/company_photo/1764054057photoLogo-color-transprt-1.png" class="company-logo me-3">
+         <div>
+             <h6 class="mb-1">Vision Development Organization</h6>
+             <small class="text-muted">Afghanistan</small>
+         </div>
+     </div>
+     <span class="text-muted">Open Jobs – 1</span>
+ </div>
+
+  <div class="company-card d-flex justify-content-between align-items-center">
+     <div class="d-flex align-items-center">
+         <img src="https://db.bast.af/public/company_photo/1764054057photoLogo-color-transprt-1.png" class="company-logo me-3">
+         <div>
+             <h6 class="mb-1">Vision Development Organization</h6>
+             <small class="text-muted">Afghanistan</small>
+         </div>
+     </div>
+     <span class="text-muted">Open Jobs – 1</span>
+ </div>
+
+  <div class="company-card d-flex justify-content-between align-items-center">
+     <div class="d-flex align-items-center">
+         <img src="https://db.bast.af/public/company_photo/1764054057photoLogo-color-transprt-1.png" class="company-logo me-3">
+         <div>
+             <h6 class="mb-1">Vision Development Organization</h6>
+             <small class="text-muted">Afghanistan</small>
+         </div>
+     </div>
+     <span class="text-muted">Open Jobs – 1</span>
+ </div>
+            <!-- Pagination -->
+            <div class="text-center mt-4">
+                <p class="text-muted">Showing 10 of 181 Companies</p>
+                <button class="btn btn-outline-danger">Show More</button>
+            </div>
+
+        </div>
+
+        <!-- Advertisement Sidebar -->
+        <div class="col-lg-3">
+            <div class="sticky-sidebar">
+
+                <div class="ad-box text-center">
+                    <img src="https://db.bast.af/public/photo/advertisement/68aa99324efa6.jpg" class="img-fluid">
+                </div>
+
+                <div class="ad-box text-center">
+                    <img src="https://db.bast.af/public/photo/advertisement/68d39e56e8558.jpg" class="img-fluid">
+                </div>
+
+                <div class="ad-box text-center bg-dark text-white">
+                    <h6>Create a professional CV</h6>
+                    <p class="small">Create a professional CV online in 3 simple steps.</p>
+                    <button class="btn btn-primary btn-sm">Get Started</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
     </main>
 </body>
 </html>

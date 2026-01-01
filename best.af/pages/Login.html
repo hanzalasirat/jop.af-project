@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bast.af</title>
+    <!-- local styles -->
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- bootstrap -->
+     <link rel="stylesheet" href="../assets/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+     <script src="../assets/bootstrap-5.3.7-dist/js/bootstrap.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCcaYpYg0VvTZhyTEggF5tJv8YMYd1GpHYr4dA+XnXhboHwRBE1nZ5K5bCrbF+AA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        body {
+      background-color: #ffffff;
+    }
+    .login-card {
+      max-width: 420px;
+      margin: 60px auto;
+    }
+    .form-control {
+      background-color: #f3f6f8;
+      border: none;
+      padding: 14px;
+    }
+    .btn-login {
+      background-color: #ff3b00;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+    }
+    .btn-login:hover {
+      background-color: #e63600;
+    }
+    .signup-box {
+      border: 1px dashed #ddd;
+      border-radius: 8px;
+      padding: 14px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .password-toggle {
+      cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <main style="width: 900px; margin: auto;">
+          <div class="container">
+    <div class="login-card">
+
+      <h3 class="fw-bold mb-4">Login to Your Account</h3>
+
+      <!-- Email -->
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" placeholder="Email Address">
+      </div>
+
+      <!-- Password -->
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <div class="input-group">
+          <input type="password" class="form-control" placeholder="Password" id="password">
+          <span class="input-group-text bg-transparent border-0 password-toggle"
+                onclick="togglePassword()">
+            <i class="bi bi-eye"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- Remember / Forgot -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="remember">
+          <label class="form-check-label" for="remember">
+            Remember me
+          </label>
+        </div>
+        <a href="#" class="text-decoration-none">Forgot password?</a>
+      </div>
+
+      <!-- Login Button -->
+      <button class="btn btn-login text-white w-100 mb-3">
+        login
+      </button>
+
+      <!-- Signup -->
+      <div class="signup-box">
+        Don’t have an account?
+        <a href="#" class="text-decoration-none fw-semibold">Signup</a>
+      </div>
+
+    </div>
+  </div>
+    </main>
+</body>
+</html>
