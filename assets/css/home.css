@@ -291,6 +291,7 @@ aside a{
             margin-left: 5px;
             font-weight: 300;
         }
+<<<<<<< HEAD
         footer{
             width: 99%;
             height: 300px;
@@ -353,3 +354,32 @@ aside a{
         }
 /* footer end */
 >>>>>>> d5ccde21ffdb4600bf399bbf0d844d48e1801b2f
+=======
+       
+
+
+/* Add just these 3 lines */
+.sticky-left-sidebar, .sticky-right-sidebar { position: sticky; top: 20px; }
+.row { display: flex; flex-wrap: wrap; }
+.scrollable-main { flex: 1; }
+
+/* Mobile fix */
+@media (max-width: 991px) {
+    .sticky-left-sidebar, .sticky-right-sidebar { position: static; }
+    .row { flex-direction: column; }
+}
+
+/* link aside */
+
+
+.btn-outline-primary {
+    font-size: 0.9rem;
+    border-color: #d0d7e2;
+}
+
+
+.sidebar-content a{
+    text-decoration: none;
+    color:rgb(24, 15, 52);
+}
+>>>>>>> 375aea54bfd44c8b33735fd0fd7ff1cd91f48e6f

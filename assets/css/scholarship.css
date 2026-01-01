@@ -17,10 +17,13 @@ nav.navbar {
     z-index: 1050;
 }
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 375aea54bfd44c8b33735fd0fd7ff1cd91f48e6f
 aside a{
     text-decoration: none;
 }
@@ -173,6 +176,7 @@ aside a{
 
 /* body main */
 
+<<<<<<< HEAD
         /* Custom CSS for sticky behavior */
         .sticky-container {
             display: flex;
@@ -233,3 +237,55 @@ aside a{
             max-width: 100%;
             height: auto;
         }
+=======
+      
+        /* Simple Sticky Layout for Scholarship Page */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* Left and Right Sidebars - Sticky */
+.left-sidebar-sticky,
+.right-sidebar-sticky {
+    position: sticky;
+    top: 100px; /* Adjust based on your banner + navbar height */
+    align-self: flex-start;
+    height: fit-content;
+}
+
+/* Main Content - Normal scrolling */
+.main-content-scroll {
+    flex: 1;
+}
+
+/* On mobile, remove sticky and stack vertically */
+@media (max-width: 991px) {
+    .left-sidebar-sticky,
+    .right-sidebar-sticky {
+        position: static;
+        width: 100%;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+/* link  */
+ .btn-outline-primary {
+    --bs-btn-color: #0d6efd;
+    --bs-btn-border-color: #dbe7ff;
+    --bs-btn-hover-bg: #e7f0ff;
+    --bs-btn-hover-border-color: #cfe0ff;
+    font-size: 0.875rem;
+  }
+
+
+  /* whathar */
+    
+
+
+>>>>>>> 375aea54bfd44c8b33735fd0fd7ff1cd91f48e6f
