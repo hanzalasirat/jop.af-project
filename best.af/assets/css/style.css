@@ -179,11 +179,9 @@
     max-width: 1400px;
 }
 
-/* Ensure dropdown shows on hover */
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block !important;
-}
+
 /* Navbar css Code End */
+
 
 
 /* Footer Css Code  */
@@ -487,7 +485,7 @@
 /* Main Page */
 main{
 
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -499,7 +497,7 @@ main{
     align-items: center;
    
     margin-bottom: 40px;
-    height: 400px;
+    height: 600px;
     background-color: #aec0ca38;
    
 }
@@ -617,15 +615,21 @@ main{
 
 /* Search Css style */
 
+
 /* Job Search Section */
 .job-search-section {
     background-color: #bdcfd863;
     border-bottom: 1px solid #f0f0f0;
+    height: 380px;
 }
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+
+}
+.serch-top{
+    margin-top: 50px;
 }
 
 /* Title Styling */
@@ -739,25 +743,35 @@ main{
     }
 }
 
+/* Mobile: stack search input + button */
 @media (max-width: 576px) {
-    .job-search-title {
-        font-size: 1.75rem;
-    }
-    
     .search-box {
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        flex-direction: column !important; /* stack input & button */
+        align-items: stretch;
     }
-    
-    .popular-searches {
-        padding: 0 10px;
+
+    .search-input {
+        width: 100% !important;          /* full width input */
+        margin: 0 !important;            /* remove unwanted margin */
+        border-radius: 15px 15px 0 0 !important;
+        padding: 15px !important;
     }
-    
-    .popular-searches .badge {
-        margin: 3px;
-        padding: 5px 10px;
-        font-size: 0.8rem;
+
+    .search-btn {
+        width: 100% !important;          /* full width button */
+        margin: 0 !important;            /* remove mx-2 my-3 */
+        border-radius: 0 0 15px 15px !important;
+        padding: 15px !important;
     }
 }
+
+/* Optional: tablet small fix for <768px */
+@media (max-width: 768px) {
+    .search-box {
+        flex-wrap: wrap !important; /* allow wrapping if needed */
+    }
+}
+
 
 /* Animation for focus state */
 @keyframes pulse {
@@ -775,6 +789,7 @@ main{
 .search-input:focus {
     animation: pulse 2s infinite;
 }
+
 /* End search */
 
 /* Job Listing */
