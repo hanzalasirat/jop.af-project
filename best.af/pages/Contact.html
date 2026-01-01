@@ -14,11 +14,124 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCcaYpYg0VvTZhyTEggF5tJv8YMYd1GpHYr4dA+XnXhboHwRBE1nZ5K5bCrbF+AA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <style>
+  body {
+    background-color: #f8f9fb;
+  }
+  .contact-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+  }
+  .form-control {
+    background-color: #f1f5f9;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+  }
+  .form-control:focus {
+    background-color: #fff;
+    border: 1px solid #0d6efd;
+    box-shadow: none;
+  }
+  .btn-send {
+    background: #1e73ff;
+    color: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  .icon-box {
+    text-align: center;
+  }
+  .icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid #1e73ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    color: #1e73ff;
+    font-size: 22px;
+  }
+    </style>
 </head>
 <body>
-    <main>
+
+    <main style="width: 900px; margin: auto;">
+        <div class="container my-5">
+          <div class="contact-box shadow-sm">
         
+            <h4 class="mb-4">Leave A Message</h4>
+        
+            <form>
+              <div class="row g-3">
+            
+                <div class="col-md-6">
+                  <label class="form-label">Your Name</label>
+                  <input type="text" class="form-control" placeholder="Your Name*">
+                </div>
+            
+                <div class="col-md-6">
+                  <label class="form-label">Your Email</label>
+                  <input type="email" class="form-control" placeholder="Your Email*">
+                </div>
+            
+                <div class="col-md-6">
+                  <label class="form-label">Your Phone</label>
+                  <input type="text" class="form-control" placeholder="Phone">
+                </div>
+            
+                <div class="col-md-6">
+                  <label class="form-label">Subject</label>
+                  <input type="text" class="form-control" placeholder="Subject*">
+                </div>
+            
+                <div class="col-12">
+                  <label class="form-label">Your Message</label>
+                  <textarea class="form-control" rows="5" placeholder="Write your message..."></textarea>
+                </div>
+            
+                <div class="col-12">
+                  <button class="btn btn-send w-100 mt-3">Send Message</button>
+                </div>
+            
+              </div>
+            </form>
+        
+            <hr class="my-5">
+        
+            <div class="row text-center">
+            
+              <div class="col-md-4 icon-box">
+                <div class="icon">📍</div>
+                <h6>Address</h6>
+                <remember class="text-muted">
+                  Shahr-e-Naw, Shahr-e-Naw Park,<br>
+                  Apartment No. 138, 6th Floor
+                </p>
+              </div>
+          
+              <div class="col-md-4 icon-box">
+                <div class="icon">📞</div>
+                <h6>Call Us</h6>
+                <p class="text-danger">+93-202331011</p>
+              </div>
+          
+              <div class="col-md-4 icon-box">
+                <div class="icon">✉️</div>
+                <h6>Email</h6>
+                <p class="text-muted">admin@bast.af</p>
+              </div>
+          
+            </div>
+        
+          </div>
+        </div>
     </main>
+
 </body>
 </html>
