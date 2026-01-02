@@ -989,7 +989,7 @@ main{
 /* Advertise with Us Css Code  */
 .adv-hero {
     min-height: 420px;
-    background-image: url('/assets/images/student.jpg');
+    background-image: url('/job.af/images/student.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1263,6 +1263,7 @@ body{
         .read-more-btn:hover {
             color: #b02a37;
         }
+       
         .arabic-section {
             direction: rtl;
             text-align: right;
@@ -1310,4 +1311,3 @@ body{
             background: white;
             color: #1e3c72;
         }
-    
