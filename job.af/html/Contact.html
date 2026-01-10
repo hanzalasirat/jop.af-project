@@ -20,84 +20,7 @@
 <body >
     <!-- Header Section -->
     <!-- <header> -->
-        <!-- Top Banner -->
-        <div class="top-banner">
-        <div class="container pt-5">
-            <img src="../images/logo.png" alt="" class="logo-img logo" >
-        </div>
-        </div>
-        <!-- navbar section start -->
-        <section>
-        <!-- Navigation -->
-        <nav class="navbar  navbar-expand-lg nav-blue-bg">
-        <div class="container">
-            <!-- Mobile Toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-                <span class="navbar-toggler-icon" style="filter: brightness(0) invert(1);"></span>
-            </button>
-            <!-- Navbar Content -->
-            <div class="collapse  navbar-collapse" id="navbarContent">
-                <!-- Navigation Links -->
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../html/home.html">Home</a>
-                    </li>
-                    <!-- Jobs Dropdown (like Services) -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Jobs
-                        </a>
-                        <ul class="dropdown-menu text-white menu-box">
-                            <li><a class="dropdown-item" href="/best.af/pages/Jobs.html">Create Resume CV</a></li>
-                            <li><a class="dropdown-item " href="/best.af/pages/Companies.html">Compainse</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/scholarship.html">Scholarship</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/onlineC.html">Online Course</a>
-                    </li>
-                    <!-- Services Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu menu-box">
-                            <div class="item">
-                            <li><a class="dropdown-item" href="/best.af/pages/services/AdvertiseWithUs.html">Advertise With Us</a></li>
-                            <li><a class="dropdown-item" href="/best.af/pages/services/StaffOutsourcing.html">Staff Outsourcing</a></li>
-                            <li><a class="dropdown-item" href="/best.af/pages/services/CvBank.html">CV Bank</a></li>
-                            <li><a class="dropdown-item" href="">RFQ/RFP</a></li>
-
-                            </div>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/best.af/pages/AboutUs.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/Contact.html">Contact Us</a>
-                    </li>
-                </ul>
-                <!-- Search and Social Icons -->
-                <div class="d-flex align-items ms-4">
-                    <!-- Social Icons -->
-                    <div class="social-icons">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-twitter"></i></a>
-                        <a href="#"><i class="bi bi-youtube"></i></a>
-                    </div>
-                     <!-- Search Icon (styled like social icons) -->
-                    <button class="search-icon-btn ">
-                        <i class="bi bi-search "></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        </nav>
-        <!-- navbar section End -->
-    <!-- </header> -->
+        <div id="header"></div>
     <!-- Header Section End -->
      
 
@@ -133,41 +56,23 @@
     <!-- main end -->
 
     <!-- footer start -->
-    <footer>
-        <div class="left">
-            <h3>Our Company</h3>
-            <p>
-                Bast.af website with Dedicated Team and job.af both of them working under License of Naikbeen Control Panel Co. ( NCP ) For Job Seekers : Create your profile, upload your CV and apply for jobs with just one click! For Employers: Create your profile, post your vacancy, and find the best talents.
-            </p>
-            <span>3rd STreet of Karte-e-Naw</span><br>
-            <span>Phone: (020) 233 1011</span><br>
-            <span>Email: info@job.af</span>
-        </div><br>
-    
-        <div class="about-link">
-            <h3>AboutLink</h3>
-            <a href="#">Post a Job</a><br>
-            <a href="#">CV Bank</a><br>
-            <a href="#">Advertise With Us</a><br>
-            <a href="#">FAQs</a><br>
-            <a href="#">About Us</a><br>
-            <a href="#">Policy And Terms</a><br>
-            <a href="#">Staff Outsourcing</a><br>
-        </div>
-        <div class="last-news">
-            <h3>Laest News</h3>
-            <p>100 Free Scholarships – A Special Opportunity for Our People!</p>
-            <p>Bayan University: Bringing Canadian Education to Afghanistan</p>
-            <p>Women in STEM Scholarship in the U.S. and Canada</p>
-            <p>University of South Australia Master and PhD Scholarships for International Students</p>
-            <h3 class="top"><a href="#">/\</a></h3>
-        </div>
-        
-    </footer>
-    <!-- footer end -->
-    <div class="footer-p">
-       @2025 – All Right Reserved. Designed and Developed by Naikbeen Control Panel
-    </div>
+    <div id="footer"></div>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+        // Fetch header
+        fetch("../component/header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+                initHeader(); // 🔥 Initialize the header after it's in the DOM
+            });
+
+        // Fetch footer
+        fetch("../component/footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
     <!-- footer end -->
      
     <!-- Bootstrap JS -->
